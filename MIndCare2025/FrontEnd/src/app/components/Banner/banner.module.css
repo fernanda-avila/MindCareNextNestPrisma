@@ -1,0 +1,209 @@
+/* src/app/components/BannerZen/bannerZen.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+.bannerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: #f9f9fc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.textSection {
+  max-width: 500px;
+}
+
+.tagline {
+  display: inline-block;
+  background-color: #ece4e4;
+  color: #000000b7;
+  padding: 5px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 48px;
+  color: #000000b7;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  
+}
+
+.description {
+  font-size: 18px;
+  color: #6f7287;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.demoButton {
+  padding: 15px 30px;
+  width: 250px;
+  background-color: transparent;
+  color: #FF7043;
+  border: 2px solid #FF7043;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.demoButton:hover {
+  background-color: #FF7043;
+  color: white;
+}
+
+.imageSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.assistantImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sessionReminder {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 30px;
+  left: -15px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sessionReminder p {
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+.mainImage {
+ border-radius:10px;
+  max-width: 700px;
+}
+
+
+
+.buttonContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.demoButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background-color:#FF7043;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.demoButton:hover {
+  background-color: #ff6f43e7;
+  transform: translateY(-2px);
+}
+
+.chatIcon {
+  font-size: 1.2rem;
+}
+
+
+.speechBubble {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: max-content;
+  max-width: 200px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+ 
+}
+
+.speechBubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: white transparent transparent;
+ 
+}
+
+.buttonContainer:hover .speechBubble {
+  opacity: 1;
+}
+
+.buttonContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-start; 
+  gap: 15px; 
+  margin-bottom: 20px;
+}
+
+
+.bubbleImageContainer {
+  width: 60px;
+  height: 60px;
+}
+
+.bubbleImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #7abd7a; 
+}
+
+
+.speechBubble {
+  position: relative;
+  top: 0;
+  left: 20%;
+  transform: none;
+  margin-top: 10px; 
+}
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translate(-50%, 10px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.speechBubble {
+  animation: fadeIn 0.5s ease-out 1s forwards;
+}
+
+

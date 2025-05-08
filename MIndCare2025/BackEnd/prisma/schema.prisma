@@ -1,0 +1,80 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Pessoa {
+  id            Int       @id @default(autoincrement())
+  nomeCompleto  String
+  genero        String?
+  email         String    @unique
+  dataNascimento DateTime?
+  usuarios      Usuario[]
+  psicologos    Psicologo[]
+  colaboradores  Colaborador[]
+}
+
+model Usuario {
+  id           Int        @id @default(autoincrement())
+  pessoaId     Int
+  pessoa       Pessoa     @relation(fields: [pessoaId], references: [id])
+  senha        String     // Senha aqui no modelo Usuario
+  agendamentos Agendamento[]
+  planos       UsuarioPlano[]
+}
+
+model Psicologo {
+  id           Int        @id @default(autoincrement())
+  pessoaId     Int
+  areaAtuacao  String?
+  crp          String?
+  pessoa       Pessoa     @relation(fields: [pessoaId], references: [id])
+  agendamentos Agendamento[]
+}
+
+model Colaborador {
+  id             Int        @id @default(autoincrement())
+  pessoaId       Int
+  turnoDisponivel String?
+  pessoa         Pessoa     @relation(fields: [pessoaId], references: [id])
+  agendamentos   Agendamento[]
+}
+
+model Plano {
+  id            Int        @id @default(autoincrement())
+  nome          String
+  descricao     String?
+  preco         Float?
+  duracaoMeses  Int
+  agendamentos  Agendamento[]
+  usuarioPlanos UsuarioPlano[]
+}
+
+model Agendamento {
+  id            Int       @id @default(autoincrement())
+  dataConsulta  DateTime
+  usuarioId     Int?
+  psicologoId   Int?
+  colaboradorId Int?
+  planoId       Int?
+
+  usuario       Usuario?   @relation(fields: [usuarioId], references: [id])
+  psicologo     Psicologo? @relation(fields: [psicologoId], references: [id])
+  colaborador   Colaborador? @relation(fields: [colaboradorId], references: [id])
+  plano         Plano?     @relation(fields: [planoId], references: [id])
+}
+
+model UsuarioPlano {
+  usuarioId Int
+  planoId   Int
+  dataInicio DateTime
+  dataFim   DateTime
+  usuario   Usuario @relation(fields: [usuarioId], references: [id])
+  plano     Plano   @relation(fields: [planoId], references: [id])
+
+  @@id([usuarioId, planoId])
+}
