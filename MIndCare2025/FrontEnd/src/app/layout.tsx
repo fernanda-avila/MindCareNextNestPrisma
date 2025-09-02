@@ -1,6 +1,8 @@
 // src/app/layout.tsx
 
-export const metadata = {
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
     title: 'My App',
     description: 'Aplicação Next.js',
   };

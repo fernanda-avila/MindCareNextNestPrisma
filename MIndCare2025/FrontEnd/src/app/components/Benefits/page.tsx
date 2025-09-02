@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import styles from './benefit.module.css';
 
-// Ícones com cores específicas
+
 import { FaComment, FaUsers, FaCalendarAlt } from 'react-icons/fa';
 
 const Benefits: React.FC = () => {
@@ -12,24 +12,23 @@ const Benefits: React.FC = () => {
     {
       title: 'Chat com Colaborador',
       description: 'Converse com colaboradores a qualquer momento e receba suporte imediato.',
-      icon: <FaComment className={styles.greenIcon} />, // Ícone verde
+      icon: <span className={styles.greenIcon}><FaComment /></span>, 
     },
     {
       title: 'Profissionais Parceiros',
       description: 'Acesso a uma rede de profissionais especializados em saúde mental.',
-      icon: <FaUsers className={styles.redIcon} />, // Ícone vermelho
+      icon: <span className={styles.redIcon}><FaUsers /></span>, 
     },
     {
       title: 'Agendamento Flexível',
       description: 'Agende suas consultas conforme sua disponibilidade, com flexibilidade total.',
-      icon: <FaCalendarAlt className={styles.orangeIcon} />, // Ícone laranja
+      icon: <span className={styles.orangeIcon}><FaCalendarAlt /></span>,
     },
   ];
 
   return (
     <section className={styles.benefitsSection}>
       <div className={styles.container}>
-        {/* Imagem à esquerda */}
         <div className={styles.imageContainer}>
           <img
             src="./sideimg.jpg"
@@ -41,7 +40,7 @@ const Benefits: React.FC = () => {
           </div>
         </div>
 
-        {/* Título, descrição e cards de benefícios à direita */}
+       
         <div className={styles.textContainer}>
           <div className={styles.tagline}>
             MindCare: O caminho para um bem-estar mental completo.
@@ -51,7 +50,7 @@ const Benefits: React.FC = () => {
             Conheça as vantagens que a nossa plataforma oferece para garantir o seu bem-estar.
           </p>
 
-          {/* Cards de Benefícios */}
+         
           <div className={styles.cardsContainer}>
             {benefits.map((item, index) => (
               <div
@@ -61,7 +60,7 @@ const Benefits: React.FC = () => {
                 onMouseLeave={() => setHoveredItem(null)}
               >
                 <div className={styles.cardIcon}>
-                  {item.icon} {/* Ícone */}
+                  {item.icon} 
                 </div>
                 <h3 className={styles.cardTitle}>{item.title}</h3>
                 {hoveredItem === index && (
