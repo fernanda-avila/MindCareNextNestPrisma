@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dynamic-concept-444721-n5",
+  "private_key_id": "79ba8b694ace37ebfe2e13edd695580dc702ed0b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/OJmHcCe5W00w\nAaGU1tmHjA6ca/L01R25QtBjWr9pWF7ZQu1XxNlw6TEoJsfNSaXcykUkY75NYQBp\nquxmlsQlnSNKNRD78WkjIJ5zqbsdog2XNrhdoOKDRYSKOLR7xYqXoudJ1XOlk/1q\n0O1Xs3tVGQ+R7RG+XLybkiNHhwchn122z80AKIKA+witNQRylsWJSO0/wMPR80Dw\nhzpQ6ittTpOWg3fr53AO5+6luoP3I8S8aQfRDNn68rDcEPgcu0BN3t1fdg4Kp8Hd\nKDAHM+d0BZawKL70+Y00J4TopkDkKrcdyu9xQDReumBEnr6ENT7VfO7LR9WO08Le\niBB/Q7e5AgMBAAECggEAIzweriIwb6svMeVbDL36H0vjdVc+0XZjn7t8ApK6KoMq\nFwaKDV4sYu3VLPzYXC9x7Jko3Ge0rTVuigoAvXaSdgvacNYOZx44rUxZZh6kZ/Vw\nY6ilmDsJAf9RSNbiCtx/iSlvTN+UC7KVQ5Vz5nEgDLIteEoitt0Hs/LdpVRwL/WH\n5nloAzYb6MB5NnkOCbgBMqSQLcAaoxD+N1y/d2CZlWffBDo5gmKl+DfU11PR4YhF\nlNLAf9pwW0gm/+rChJPCZu1pGELKMbndF271njz84ilagBKLCO79V192aiHfiruQ\nlTzcWv0OPJ+x3DhZGOx5suJ8o695UaTkx3yO5D/UwQKBgQDtQC21BdubgejMIzj3\nKfpFPr2mDUNf5TEowykWaF22uuyN0kO933685dTB0A7PQf+vlXb/jHmmJ0WeRx32\nX4a9IPpE92OVoTR3+Co+K/7pAnyzmQXpPTLF/kn42TymOkcZpq21RDzZVBc/wbq8\nnvODLu3FSgghI3Obw7FuV+TxFQKBgQDOVTIcHqIOc2dUjwY3dBGLARK5B5Ou/LUt\nn4aHM8L1oSNvFN0oGeNkfld/nRj7kZDPbSZS1VhDu2ndlSqU3+xfVZlhbFB9O/+R\nGIwKgbERy4p78qbL+ja+72H2BZHug6o49vTUl9OW30Pu0o1nB9IALfmXcIqktVsZ\nMLAALP5tFQKBgGOcWpRyjS3RcWikMTq1CTshiIa7ctpEZEt1BT8/OnmKKd+xtHd3\n6sJszNNDA7TJRQz3eCr7U+gK/RPjUBUtLmkh+3IRXGJqeJkWPMY1uqUiQjE1wmGX\nLEYs6enta6VvOoLulGhS6illQQ2nzTt8kUk23uXCm38uX0+67jgh9yGxAoGAMkUB\ne2ZfN0QYlbpu2k3WBFbTl+7npUd+YMov/Xq38h47QtIDe8Sq6Q37BWVh89CoRlEi\neCXwZjgf99Ni13ii3ys8vkakaY6XmmMvo1Orr1k2uTIKP0IL2oL6C/WZc1HyxAQu\n7Ci9bVGh/Gqh9ssp9887sxDBRpXExyNcjf5oUm0CgYEAlpUbrVWgITq//db+yi7Y\nj13/GcnSRm2LGDAqReiUB7MzST5koURV2LdgnUKiL54uThLBTtlvqjKPmtRETbkV\nquGZTb7cfia+dQoZ8HDJlMZHUvj5+OR/dALlPgsGXx9c6rYv1vrEzWWhCGIBoKcj\niSbIlE3oLFx+waJ14jNtYLY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "mindcare@dynamic-concept-444721-n5.iam.gserviceaccount.com",
+  "client_id": "111233229862240826867",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mindcare%40dynamic-concept-444721-n5.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

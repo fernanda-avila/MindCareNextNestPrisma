@@ -21,27 +21,24 @@ const BannerZen: React.FC = () => {
 
             <div className={styles.speechBubble}>
               <div className={styles.bubbleArrow}></div>
-              <p>Estou aqui para te ouvir! 😊</p>
+              <p>Estamos aqui para te ouvir! 😊</p>
             </div>
             <img
               src="/images/terapeuta.png"
               alt="Assistente virtual"
               className={styles.assistantImage}
             />
-
-
           </div>
-
-
           <Link
-            href="/Chat"
-            className={styles.demoButton}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaCommentAlt className={styles.chatIcon} />
-            Iniciar chat online
-          </Link>
+          href="/chatAoVivo"
+          className={styles.chatButton}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Chat com Colaborador!
+        </Link>
+
+          
         </div>
       </div>
 

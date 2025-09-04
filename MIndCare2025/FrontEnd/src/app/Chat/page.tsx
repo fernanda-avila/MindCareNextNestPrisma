@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { FaPaperPlane, FaQuestionCircle, FaCommentAlt } from 'react-icons/fa';
 import styles from './Chat.module.css';
-import MessageBubble from '@/app/components/MessageBubble/MessageBubble';
+import MessageBubble from '../components/MessageBubble/MessageBubble';
 
 type Message = {
   id: string;
